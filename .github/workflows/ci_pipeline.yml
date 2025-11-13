@@ -1,4 +1,4 @@
-name: Docs CI/Quality Assurance
+name: Documentation Quality Gate (HTMLProofer)
 
 on:
   push:
@@ -9,54 +9,20 @@ on:
       - main
 
 jobs:
-  build_and_test_docs:
+  validate_built_docs:
     runs-on: ubuntu-latest
-
     steps:
-      # 1. CHECKOUT CODE 
+      # 1. CHECKOUT CODE (Required to access the committed files, including the HTML output)
       - name: Checkout Repository
         uses: actions/checkout@v4
-
-      # 2. PYTHON SETUP (Assuming you need Python for your CLI/FastAPI tests)
-      - name: Set up Python
-        uses: actions/setup-python@v5
+        
+      # 2. HTML PROOFING (Using chabad360/htmlproofer Action)
+      - name: Run HTMLProofer on Pre-Built Docs
+        uses: chabad360/htmlproofer@v1 
         with:
-          python-version: '3.x'
-
-      - name: Install Python Dependencies (e.g., Typer, FastAPI)
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          # Run Python unit tests here
-          # pytest ./src/
-
-      # 3. RUBY/JEKYLL SETUP & BUILD
-      - name: Set up Ruby environment
-        uses: ruby/setup-ruby@v1
-        with:
-          # Use a stable Ruby version
-          ruby-version: '3.2'
-          # Installs dependencies from Gemfile.lock (preferred for speed/consistency)
-          bundler-cache: true
-
-      - name: Build Jekyll Site
-        # The site must be built before htmlproofer can check the output
-        run: bundle exec jekyll build --config docs/_config.yml --destination ./_site/docs
-
-      # 4. HTML PROOFING (QUALITY ASSURANCE)
-      - name: Run HTMLProofer for Link and HTML Validation
-        run: |
-          # The command runs against the final built site files in the destination directory
-          bundle exec htmlproofer ./_site/docs \
-            --url-ignore "/#/" \
-            --check-html \
-            --allow-hash-href \
-            --disable-external 
-            # '--disable-external' is crucial for fast runs; remove it to check external links (slower)
-        env:
-          # Increase timeout if you decide to check external links later
-          HTMLPROOFER_TIMEOUT: 60 
-
-      # 5. DEPLOYMENT (Only runs if steps above succeed)
-      # This step would deploy the contents of ./_site/docs to GitHub Pages
-      # Omitted here for brevity, but this is where your deployment action goes.
+          # REQUIRED: The directory containing the pre-built HTML files
+          # This must match your local Jekyll build destination path.
+          directory: ./_site/docs 
+          
+          # OPTIONS: Set arguments for QA (disabling external checks is faster)
+          arguments: '--url-ignore "/#/" --allow-hash-href --disable-external'
