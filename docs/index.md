@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Welcome to the DevEx Docs Toolkit
+title: Documentation for the DevEx Starter Template  
 permalink: /
 ---
 
@@ -8,6 +8,10 @@ This project has three main sections:
 - Documentation content: Markdown -> Jekyll -> HTML/JS/CSS -> GitHub Pages
 - Python tools: Validate the Markdown, links, and assets of the documentation content
 - CI/CD flow: GitHub Action workflows to run the Python tools before rebuilding and updating the Docker image.
+
+## GitHub repository
+
+
 
 ## Jekyll-based doc content
 
@@ -21,13 +25,13 @@ This project has three main sections:
 
 ## Python tools
 
-### FastAPI and Swagger Docs
+### FastAPI and Swagger docs
 
 ### Typer CLI
 
-## CI/CD Flow
+## CI/CD flow
 
-### GitHub Actions
+### GitHub actions
 
 ### Docker
 

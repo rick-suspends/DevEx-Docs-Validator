@@ -4,19 +4,19 @@ This repository serves as a **production-ready, basic starting point (template)*
 
 It provides a pre-configured, modular foundation that demonstrates best practices for **containerization, CI/CD readiness, and cloud deployment**, allowing your team to focus immediately on the core business logic.
 
-The included **Jekyll Docs Validator Tool Suite** is a functional example of how a critical DevEx project—ensuring documentation quality—can be built and deployed using this template.
+The included **Jekyll Docs Tool Suite** is a functional example of a DevEx documentation system.
 
 -----
 
 ## ✨ Template Features & DevEx Best Practices
 
-This template provides the essential architectural elements required for modern DevEx tools, all pre-configured:
+This template provides pre-configured architectural elements required for DevEx tools:
 
 | Component | Purpose & DevEx Benefit | Status in this Repo |
 | :--- | :--- | :--- |
 | **Python API Core** | **FastAPI** framework provides high-performance, automatic API documentation (Swagger/ReDoc), and robust structure. | ✅ **Pre-configured** |
 | **Containerization** | Optimized **Dockerfiles** and **`docker-compose`** for consistent environments across development and production. | ✅ **Ready-to-use** |
-| **Cloud Hosting** | Deployment configuration optimized for cost-effective, high-availability platforms like **Lightsail Container Service**. | ✅ **Proven Stability** |
+| **Cloud Hosting** | Deployment configuration optimized for cost-effective, high-availability platforms like **Lightsail Container Service** or a machine hosting a **Kubernetes cluster**. | ✅ **Proven Stability** |
 | **Documentation** | Clear, comprehensive `README.md` structure and logging practices to ensure quick onboarding for contributors. | ✅ **Starter Content** |
 
 -----
@@ -57,8 +57,8 @@ To start a new DevEx project using this foundation:
     docker-compose up --build
     ```
     Your new service will be available at `http://localhost:8000`.
-
-For full documentation, see [Jekyll Docs Validator Docs](https://rick-suspends.github.io/DevEx-Docs-Validator/). 
+5. **Update documentation**
+    Follow the full documentation flow in the Jekyll example to create, generate, and publish project documentation. See [DevEx Starter Template Docs](https://rick-suspends.github.io/DevEx-Docs-Validator/). 
 
 -----
 
