@@ -1,4 +1,4 @@
-# 🛠️ DevEx Project Starter Template
+# 🛠️ DevEx Starter Template
 
 This repository serves as a **production-ready, basic starting point (template)** for building any Developer Experience (DevEx) focused project, API, or service.
 
