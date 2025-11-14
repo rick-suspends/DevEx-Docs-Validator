@@ -43,11 +43,26 @@ See the Jekyll out put at [DevEx Starter Template docs](https://rick-suspends.gi
 
 To start a new DevEx project using this foundation:
 
-1.  **Clone the Repository:**
-    ```bash
-    git clone git@github.com:rick-suspends/DevEx-Docs-Validator new-devex-project
-    cd new-devex-project
-    ```
+1. **Fork the Repository:**
+
+   Since this repository is a **DevEx Project Starter Template**, the first step is to create your own independent copy by forking the repository. 
+
+   2. Create a Server-Side Fork (Web)
+      3.  Navigate to the [DevEx Starter Template GitHub page](https://github.com/rick-suspends/DevEx-Starter-Template) 
+      3.  Click the **Fork** button to create a copy of the repository under your personal account.
+
+   2. Clone Your Fork (Command Line)
+
+      After the fork is complete, clone **your new copy** to your local machine. This is the sole remote (`origin`) for your project going forward.
+
+      ```bash
+      # Replace YOUR_USERNAME and YOUR_REPO with your new fork details
+      git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+      cd YOUR_REPO
+      ```
+
+      **Your project is now initialized!** All changes, pushes, and branches will be managed within your new repository.
+
 2.  **Modify Core Logic:**
       * Edit the Python files in the `/src` directory to implement your new tool's logic.
       * Update the `requirements.txt` file for any new dependencies.

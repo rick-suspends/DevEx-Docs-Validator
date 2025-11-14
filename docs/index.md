@@ -5,11 +5,13 @@ permalink: /
 ---
 
 This project has three main sections: 
-- Documentation content: Markdown -> Jekyll -> HTML/JS/CSS -> GitHub Pages
+- Jekyll-based documentation content: Markdown -> Jekyll -> HTML/JS/CSS -> GitHub Pages
 - Python tools: Validate the Markdown, links, and assets of the documentation content
 - CI/CD flow: GitHub Action workflows to run the Python tools before rebuilding and updating the Docker image.
 
 ## GitHub repository
+
+To fork the repository for your own use, fork from the command line with `git repo fork rick-suspends/DevEx-Starter-Template --clone=true new-repo-name`
 
 
 
