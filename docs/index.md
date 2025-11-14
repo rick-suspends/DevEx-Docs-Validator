@@ -4,6 +4,8 @@ title: Welcome to the DevEx Starter Template docs
 permalink: /
 ---
 
+# {{ page.title }}
+
 This project has three main sections: 
 - **Jekyll-based documentation content** &mdash; Markdown -> Jekyll -> HTML/JS/CSS -> GitHub Pages
 - **Python tools** &mdash; Validate the Markdown, links, and assets of the documentation content
