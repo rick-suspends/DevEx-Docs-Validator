@@ -17,7 +17,7 @@ Since this repository is a **DevEx Starter Template**, the first step is to crea
 
 1. Create a server-side fork (web)
 
-    1.  Navigate to the [DevEx Starter Template GitHub page](https://github.com/rick-suspends/DevEx-Starter-Template) 
+    1.  Navigate to the [DevEx Starter Template GitHub page](https://github.com/rick-suspends/DevEx-Starter-Template).
 
     2.  Click the **Fork** button to create a copy of the repository under your personal account.
 
