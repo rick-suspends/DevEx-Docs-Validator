@@ -49,6 +49,7 @@ Jekyll processes the Markdown files and applies templates to generate a static w
 
 You need to install Jekyll and its dependencies to build the site locally. Follow the [Jekyll installation guide](https://jekyllrb.com/docs/installation/) for your operating system.
 
+For full details on how the Jekyll system is set up in this project, see [Jekyll system](jekyll-system.html).
 
 ### HTML/JS/CSS
 
