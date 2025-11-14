@@ -8,7 +8,7 @@ The included **Jekyll Docs Tool Suite** is a functional example of a DevEx docum
 
 -----
 
-## ✨ Template Features & DevEx Best Practices
+## ✨ Template features & DevEx best practices
 
 This template provides pre-configured architectural elements required for DevEx tools:
 
@@ -21,17 +21,17 @@ This template provides pre-configured architectural elements required for DevEx 
 
 -----
 
-## 📦 Included Example: Jekyll Docs Validator Tool Suite
+## 📦 Included example: Jekyll doc system
 
-The functional code within this repository provides a working example of a DevEx tool to help you get started:
+The functional code within this repository provides a working example of a Jekyll documentation system to help you get started:
 
-The **Jekyll Docs Validator API & CLI** is designed to:
+The **Jekyll Docs API & CLI** are designed to:
 
   * **Enforce Quality:** Automate checks for documentation integrity.
   * **Reduce Friction:** Quickly validate Markdown, link health, and asset coherence in a GitHub Actions workflow.
-  * **Improve DX:** Provide immediate, clear feedback to developers submitting documentation changes.
+  * **Improve DevEx:** Provide immediate, clear feedback to developers submitting documentation changes.
 
-### Access Jekyll Example
+### Access Jekyll example
 
 In the `/docs` directory is a functional Jekyll system with all the elements you need to build out your own Jekyll project.
 
@@ -39,21 +39,21 @@ See the Jekyll out put at [DevEx Starter Template docs](https://rick-suspends.gi
 
 -----
 
-## 🛠️ Getting Started (Using the Template)
+## 🛠️ Getting started (using the template)
 
 To start a new DevEx project using this foundation:
 
-1. **Fork the Repository:**
+1. **Fork the repository:**
 
-   Since this repository is a **DevEx Project Starter Template**, the first step is to create your own independent copy by forking the repository. 
+   Since this repository is a **DevEx Starter Template**, the first step is to create your own independent copy by forking the repository. 
 
-   1. Create a Server-Side Fork (Web)
+   1. Create a server-side fork (web)
 
       1.  Navigate to the [DevEx Starter Template GitHub page](https://github.com/rick-suspends/DevEx-Starter-Template) 
 
       2.  Click the **Fork** button to create a copy of the repository under your personal account.
 
-   2. Clone Your Fork (Command Line)
+   2. Clone your fork (command line)
 
       After the fork is complete, clone **your new copy** to your local machine. This is the sole remote (`origin`) for your project going forward.
 
@@ -63,25 +63,27 @@ To start a new DevEx project using this foundation:
       cd YOUR_REPO
       ```
 
-      **Your project is now initialized!** All changes, pushes, and branches will be managed within your new repository.
+      **Your project is now initialized.** All changes, pushes, and branches will be managed within your new repository.
 
-2.  **Modify Core Logic:**
+2.  **Modify core logic:**
       * Edit the Python files in the `/src` directory to implement your new tool's logic.
+        * `api.py`: FastAPI application.
+        * `cli.py`: Typer command-line interface.
       * Update the `requirements.txt` file for any new dependencies.
-3.  **Rename/Rebrand:** Update the image name in the `Dockerfile` and `docker-compose.yaml` files, and rebrand the `README.md`.
-4.  **Build and Test:**
+3.  **Rename/rebrand:** Update the image name in the `Dockerfile` and `docker-compose.yaml` files, and rebrand the `README.md`.
+4.  **Build and test:**
     ```bash
     docker-compose up --build
     ```
-    Your new service will be available at `http://localhost:8000`.
+    Your new service is available at `http://localhost:8000`.
 5. **Update documentation**
     Follow the full documentation flow in the Jekyll example to create, generate, and publish project documentation. See [DevEx Starter Template Docs](https://rick-suspends.github.io/DevEx-Docs-Validator/). 
 
 -----
 
-## ☁️ Deployment Reference
+## ☁️ Deployment reference
 
-This table provides the live access point for the example validator service, demonstrating a successful deployment from this template:
+This table provides the live access point for this image, demonstrating a successful deployment from this template:
 
 | Environment | Service | Access URL |
 | :--- | :--- | :--- |
