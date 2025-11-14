@@ -31,6 +31,12 @@ The **Jekyll Docs Validator API & CLI** is designed to:
   * **Reduce Friction:** Quickly validate Markdown, link health, and asset coherence in a GitHub Actions workflow.
   * **Improve DX:** Provide immediate, clear feedback to developers submitting documentation changes.
 
+### Access Jekyll Example
+
+In the `/docs` directory is a functional Jekyll system with all the elements you need to build out your own Jekyll project.
+
+See the Jekyll out put at [Jekyll Docs Validator Docs](https://rick-suspends.github.io/DevEx-Docs-Validator/).
+
 -----
 
 ## 🛠️ Getting Started (Using the Template)
