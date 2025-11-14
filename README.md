@@ -48,7 +48,9 @@ To start a new DevEx project using this foundation:
    Since this repository is a **DevEx Project Starter Template**, the first step is to create your own independent copy by forking the repository. 
 
    2. Create a Server-Side Fork (Web)
+
       3.  Navigate to the [DevEx Starter Template GitHub page](https://github.com/rick-suspends/DevEx-Starter-Template) 
+
       3.  Click the **Fork** button to create a copy of the repository under your personal account.
 
    2. Clone Your Fork (Command Line)
@@ -83,8 +85,4 @@ This table provides the live access point for the example validator service, dem
 
 | Environment | Service | Access URL |
 | :--- | :--- | :--- |
-| **Production** | AWS Lightsail Container Service | 
-   Get Status: `https://container-service-1.gqceswqwzkchr.us-west-2.cs.amazonlightsail.com\status`<br>
-   Get Info: `https://container-service-1.gqceswqwzkchr.us-west-2.cs.amazonlightsail.com\info`<br>
-   View docs: `https://container-service-1.gqceswqwzkchr.us-west-2.cs.amazonlightsail.com\docs`
-|
+| **Production** | AWS Lightsail Container Service | Get Status: `https://container-service-1.gqceswqwzkchr.us-west-2.cs.amazonlightsail.com\status`<br> Get Info: `https://container-service-1.gqceswqwzkchr.us-west-2.cs.amazonlightsail.com\info`<br> View docs: `https://container-service-1.gqceswqwzkchr.us-west-2.cs.amazonlightsail.com\docs` |
