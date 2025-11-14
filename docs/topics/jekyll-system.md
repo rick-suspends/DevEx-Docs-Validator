@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Jekyll system 
-permalink: /
+permalink: /jekyll-system.html/
 ---
 
 ## Jekyll system
