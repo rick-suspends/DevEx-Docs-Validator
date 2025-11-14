@@ -63,7 +63,7 @@ To start a new DevEx project using this foundation:
       cd YOUR_REPO
       ```
 
-      **Your project is now initialized.** All changes, pushes, and branches will be managed within your new repository.
+      **Your project is now initialized.** All changes, pushes, and branches are managed within your new repository.
 
 2.  **Modify core logic:**
       * Edit the Python files in the `/src` directory to implement your new tool's logic.
